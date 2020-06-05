@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$('.bank-slider').slick({
   		slidesToShow: 4,
   		slidesToScroll: 1,
-  		autoplay: true,
+  		autoplay: false,
   		autoplaySpeed: 3000,
   		infinite: true,
   		dots: false,

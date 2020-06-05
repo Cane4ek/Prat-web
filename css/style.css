@@ -47,6 +47,9 @@
 .menu > .nav-item > .nav-link{
 	padding: 0 20px;
 }
+.navbar-brand{
+	padding: 16px 0;
+}
 .icon-profile{
 	display: none;
 }
@@ -97,12 +100,12 @@
 
 /*main*/
 main{
-	margin-top: 65px;
+	margin-top: 90px;
 }
 .breadcrumb{
 	background-color: white;
 	padding: 6px 30px;
-	margin-bottom: 40px;
+	margin-bottom: 6px 0 40px 0;
 }
 .breadcrumb-item > a{
 	color: #999999;
@@ -199,6 +202,7 @@ main{
 
 
 .sl-slider{
+	outline: none;
 	padding: 10px 10px;
 	margin: 0 15px;
 }
@@ -238,6 +242,14 @@ main{
 .bank-easy-img > a > img:hover,
 .bank-ipay-img > a > img:hover{
 	transition: .3s;
+}
+.bank-pb-pay > a > img:focus,
+.bank-pb-instruction > a > img:focus,
+.bank-port-img > a > img:focus,
+.bank-pb-img > a > img:focus,
+.bank-easy-img > a > img:focus,
+.bank-ipay-img > a > img:focus{
+	border: none !important;
 }
 .bank-port-img{
 	padding-top: 54px;
@@ -308,11 +320,14 @@ main{
 .text-white-first:before{
 	content: '';
 	display: block;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 	width: 100%;
 	max-width: 220px;
 	height: 2px;
 	background-color: #F7F7F7;
+}
+.logo-ft{
+	padding: 10px 10px 10px 0; 
 }
 .logo-ft-title{
 	color: #fff;
@@ -421,6 +436,9 @@ main{
 @media screen and (max-width: 1550px){
 	.container{
 		padding: 0 40px;
+	}
+	.breadcrumb{
+		padding-top: 6px;
 	}
 	.ft-column-fiveth{
 		margin-right: 2%;
