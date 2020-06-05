@@ -1,0 +1,652 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	color: #707070;
+}
+
+
+/*----Header---*/
+.container {
+	max-width: 1920px;
+	padding: 0 70px;
+}
+.menu{
+	font-size: 0.875em;
+}
+.navbar{
+	border-bottom: 2px solid #D7D7D7;
+}
+.form-inline{
+	justify-content: flex-end;
+	width: 100%;
+	max-width: 331px;
+}
+.btn-header{
+	width: 100%;
+	max-width: 200px;
+	background-color: #707070;
+	border: 1px solid #707070;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	color: white;
+	font-size: 0.875em;
+	margin-left: 30px;
+}
+.btn-header:active{
+	background-color: #000;
+	border-color: #000;
+}
+.btn-header:hover{
+	background: #1D1D1D;
+}
+.form-control:focus{
+	border-color: none;
+	box-shadow: none;
+}
+.menu > .nav-item > .nav-link{
+	padding: 0 20px;
+}
+.icon-profile{
+	display: none;
+}
+.fas{
+	padding-left: 10px;
+}
+.fa-user-circle{
+	transform: scale(1.7);
+}
+.bi-search{
+	color: #707070;
+	padding: 5px;
+	border: 1px solid #707070;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.search-box.nav-link  a{
+	padding: 0;
+}
+.search-icon{
+	padding-right: 0 !important;
+}
+.form-control{
+	transition: .3s;
+	padding: 0 10px;
+	margin: 0 0 0 5px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+	top: 57px;
+	left: -175px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu .language-list{
+	left: 0px;
+}
+
+.dropdown-menu-cnt{
+	left: 0 !important;
+}
+
+.language-list {
+	min-width: 1rem;
+	left: 0 !important;
+}
+
+.search-list-mobile{
+	display: none;
+}
+
+/*main*/
+main{
+	margin-top: 65px;
+}
+.breadcrumb{
+	background-color: white;
+	padding: 6px 30px;
+	margin-bottom: 40px;
+}
+.breadcrumb-item > a{
+	color: #999999;
+}
+.breadcrumb-item.active{
+	color: #000;
+}
+
+.main-content-bank{
+	margin-bottom: 28px;
+}
+.bank-content-title{
+	width: 100%;
+	max-width: 770px;
+	margin: 0 auto;
+	box-shadow: 0px 25px 0px -23px rgba(112, 112, 112, 0.75);
+	
+}
+.nav-link,
+.nav-tabs{
+	border: none !important;
+}
+.nav-tabs,
+.nav-item {
+	margin-bottom: 0 !important;
+}
+.nav-link.active{
+	box-shadow: 0px 25px 0px -23px rgba(0,0,0,0.75);
+	padding-bottom: 25px;
+}
+.bank-content-title-left,
+.bank-content-title-right{
+	font-size: 1.5em;
+	color: #273133;
+	position: relative;
+	padding: 0;
+	
+}
+.bank-content-title-left{
+	margin-right: 60px;
+}
+
+.bank-content-title-right{
+	margin-left: 60px;
+}
+
+.bank-content-title-left:hover,
+.bank-content-title-right:hover{
+	text-decoration: none;
+	color: #707070;
+}
+.bank-content-subtitle{
+	width: 100%;
+	max-width: 788px;
+	margin: 36px auto 60px;
+}
+.bank-content-description{
+	font-size: 1.25em;
+	text-align: center;
+	color: #273133;
+}
+
+/*------Slider---------*/
+/*------Arrows---------*/
+.next{
+	background-image: url(../image/main-pay/arrowr.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+    top: 25%;
+    right: -28px;
+}
+
+.prev{
+	background-image: url(../image/main-pay/arrowl.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+    top: 25%;
+    left: -28px;
+}
+.next:hover,
+.prev:hover{
+	transition: .3s;
+	border: 1px solid #707070;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+
+
+.sl-slider{
+	padding: 10px 10px;
+	margin: 0 15px;
+}
+.bank-pb-box-content:focus{
+	border: none !important;
+}
+.bank-box{
+	border: 2px solid #707070;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .3s;
+	filter: grayscale(100%);
+}
+.bank-box:hover{
+	box-shadow: 0 0 0 5px rgba(112, 112, 112, 1);
+	border: 2px solid rgba(0, 0, 0, 0);
+	filter: none;
+}
+.bank-pb-img{
+	padding-top: 44px;
+	padding-bottom: 26px;
+	text-align: center;
+}
+.bank-pb-img > a > img,
+.bank-pb-pay > a > img,
+.bank-pb-instruction > a > img,
+.bank-port-img > a > img,
+.bank-easy-img > a > img,
+.bank-ipay-img > a > img{
+	margin: 0 auto;
+}
+
+.bank-pb-pay > a > img:hover,
+.bank-pb-instruction > a > img:hover,
+.bank-port-img > a > img:hover,
+.bank-pb-img > a > img:hover,
+.bank-easy-img > a > img:hover,
+.bank-ipay-img > a > img:hover{
+	transition: .3s;
+}
+.bank-port-img{
+	padding-top: 54px;
+	padding-bottom: 21px;
+	text-align: center;
+}
+.bank-easy-img{
+	text-align: center;
+	padding-top: 16px;
+}
+.bank-ipay-img{
+	padding-top: 33px;
+	padding-bottom: 17px;
+	text-align: center;
+}
+.bank-funtion{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 26px;
+	padding-bottom: 28px;
+}
+.bank-pb-pay,
+.bank-pb-instruction{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.bank-pb-description{
+	margin-top: 35px;
+}
+.bank-pb-text{
+	font-size: 1.125em;
+	color: #273133;
+	line-height: 1.687em;
+}
+
+
+
+/*----footer---->*/
+.bg-navy{
+	background-color: #707070;
+	color: #fff;
+	font-size: 0.875em;
+}
+.bg-navy .row{
+	margin: 0;
+}
+.text-white{
+	font-size: 1em;
+	padding-left: 15px;
+	margin-bottom: 30px;
+}
+.text-white:before{
+	content: '';
+	display: block;
+	margin-bottom: 40px;
+	width: 100%;
+	max-width: 110px;
+	height: 2px;
+	background-color: #F7F7F7;
+
+}
+.text-white-first{
+	margin-right: 9%;
+	width: 105px;
+	max-width: 239px;
+}
+.text-white-first:before{
+	content: '';
+	display: block;
+	margin-bottom: 40px;
+	width: 100%;
+	max-width: 220px;
+	height: 2px;
+	background-color: #F7F7F7;
+}
+.logo-ft-title{
+	color: #fff;
+	transition: .3s;
+}
+.logo-ft-title:hover{
+	color: #A5A5A5;
+	text-decoration: none;
+}
+.apps-subtitle{
+	color: #fff;
+	font-size: 0.875em;
+}
+.apps-subtitle:hover{
+	text-decoration: none;
+	color: #fff;
+}
+.apps-nav{
+	display: flex;
+	align-items: center;
+}
+.img-yelthun,
+.img-ggl{
+	margin-right: 6px;
+}
+.footer-nav > .nav-item > .nav-link{
+	color: #fff;
+	font-size: 0.875em;
+	transition: 0.3s;
+}
+.footer-nav > .nav-item > .nav-link:hover{
+	color: #A5A5A5; 
+}
+.media-cnt-box{
+	max-width: 360px;
+}
+.media-footer{
+	max-width: 110px;
+	cursor: pointer;
+}
+.media-footer > img {
+	filter: grayscale(100%);
+	transition: 0.7s;
+}
+.media-footer > img:hover{
+	filter: none;	
+}
+
+.fa-twitter,
+.fa-facebook-f,
+.fa-instagram {
+	width: 32px;
+	height: 32px;
+	color: white;
+	transition: .3s;
+	margin: 0 13px 0 0;
+}
+.fa-pinterest-p {
+	width: 32px;
+	height: 32px;
+	color: white;
+	transition: .3s;
+	margin: 0 5px 0 0;
+}
+
+.fa-twitter:hover{
+	color: #A5A5A5;
+}
+
+.fa-facebook-f:hover{
+	color: #A5A5A5;
+}
+
+.fa-instagram:hover{
+	color: #A5A5A5;
+}
+
+.fa-pinterest-p:hover{
+	color: #A5A5A5;
+}
+
+.apps-title{
+	margin-bottom: 10px;
+}
+.img-ggl{
+	max-width: 117px;
+}
+
+.img-ggl,
+.img-yelthun,
+.img-stolb{
+	filter: grayscale(100%);
+	transition: 0.7s
+}
+.img-ggl:hover,
+.img-yelthun:hover,
+.img-stolb:hover{
+	filter: none;
+	transform: scale(1.1);
+}
+
+.ft-column-fiveth{
+	margin-right: 5%;
+}
+/*---Media screen---*/
+@media screen and (max-width: 1550px){
+	.container{
+		padding: 0 40px;
+	}
+	.ft-column-fiveth{
+		margin-right: 2%;
+	}
+}
+@media screen and (max-width: 1450px){
+	.btn-header{
+		display: none;
+	}
+	.icon-profile{
+		display: block;
+		margin-left: 30px;
+	}
+	.form-inline{
+		max-width: 150px;
+	}
+}
+@media screen and (max-width: 1275px){
+	.menu > .nav-item > .nav-link{
+		padding: 0 5px;
+	}
+}
+@media screen and (max-width: 1160px){
+	.btn-header{
+		width: 100%;
+		max-width: 150px;
+		font-size: 0.75em;
+	}
+	.text-white-first{
+		margin-right: 2%;
+	}
+	.navbar-brand{
+		font-size: 1em;
+	}
+}
+@media screen and (max-width: 1071px){
+	   .icon-profile{
+	   	margin-left: 5px;
+	   }
+	   .form-inline{
+	   	max-width: 114px;
+	   }
+	   .navbar-brand{
+	   	margin-right: 10px;
+	   	font-size: 0.875em;
+	   }
+	   .ft-column-fiveth{
+	   	margin-left: 5px;
+	   }
+	   .ft-column-fourth{
+	   	margin-right: 5px;
+	   }
+	   .ft-column-sixth{
+	   	max-width: 155px;
+	   }
+}
+@media screen and (max-width: 990px) {
+	.container{
+		padding: 0 15px;
+	}
+	.language-choice{
+		font-size: 1.5em;
+	}
+	.form-control{
+		font-size: 1.5em;
+	}
+	.menu{
+		font-size: 1.5em;
+	}
+	.search-list-mobile{
+		width: 100%;
+		max-width: 800px;
+		display: block;
+	}
+	.search-list-mobile > input{
+		min-width: 300px;
+		padding: 0 5px;
+		margin: 0;
+	}
+	.form-inline{
+		max-width: 255px;
+		padding: 5px 15px 15px;
+		display: block;
+	}
+	.text-white-first{
+		margin-left: 15px;
+		margin-right: 82px;
+	}
+	.btn-header{
+		display: block;
+		font-size: 1.5em;
+		min-width: 300px;
+		margin-left: 0;
+	}
+	.icon-profile{
+		display: none;
+	}
+	.media-cnt-box{
+		max-width: 360px;
+	}
+	.menu > .nav-item > .nav-link{
+		padding: 15px;
+	}
+	.bank-content-title{
+		margin-top: 40px;
+	}
+	.ft-column-second,
+	.ft-column-third,
+	.ft-column-fourth{
+		min-width: 300px;
+	}
+	.search-box{
+		display: none;
+	}
+
+@media screen and (max-width: 800px){
+	.bank-content-title{
+		width: 100%;
+		max-width: 540px;
+		
+	}
+	.bank-content-title-left{
+		margin: 0 0 5px 0;
+	}
+	.bank-content-title-right{
+		margin: 5px 0 0 0;
+	}
+	.nav-link.active{
+	padding-bottom: 18px;
+	}
+	.bank-content-title{
+		box-shadow: none;
+	}
+	.bank-content-title-left,
+	.bank-content-title-right{
+		font-size: 1.25em;
+	}
+}
+@media screen and (max-width: 480px){
+	.navbar-brand{
+		font-size: 0.75em;
+	}
+	.text-white-first{
+		width: 100%;
+		min-width: 250px;
+	}
+	.bank-content-title-left,
+	.bank-content-title-right{
+		font-size: 1em;
+	}
+	.bank-content-description{
+		font-size: 1em;
+	}
+	.bank-pb-text{
+		font-size: 1em;
+	}
+	.bank-content-title{
+		max-width: 430px;
+	}
+	.breadcrumb-item.active,
+	.breadcrumb-item > a{
+		font-size: 0.75em;
+	}
+
+}
+
+@media screen and (max-width: 400px){
+	.menu{
+		font-size: 1em;
+	}
+	.bank-ipay-img > a > img {
+		transform: scale(0.7);
+	}
+	.bank-pb-img > a > img {
+		transform: scale(0.7);
+	}
+	.bank-pb-pay > a > img{
+		transform: scale(0.7);
+	}
+	.bank-pb-instruction > a > img{
+		transform: scale(0.7);
+	}
+	.bank-port-img > a > img{
+		transform: scale(0.7);
+	}
+	.bank-easy-img > a > img{
+		transform: scale(0.7);
+	}
+	.btn-header,
+	.form-control{
+		min-width: 250px;
+		font-size: 1em;
+	}
+	.search-list-mobile > input{
+		min-width: 250px;
+	}
+	.language-choice{
+		font-size: 1em;
+	}
+}
+@media screen and (max-width: 330px){
+	.navbar-brand{
+		font-size: 0.675em;
+	}
+	.bank-port-img > a > img{
+		margin-left: -20px;
+	}
+	.bank-pb-img > a > img {
+		margin-left: -16px;
+	}
+	.bank-easy-img > a > img{
+		margin-left: -19px;
+	}
+	.bank-ipay-img > a > img{
+		margin-left: -17px;
+	}
+	.bank-ipay-img{
+		padding: 10px 0;
+	}
+	.bank-pb-img{
+		padding: 10px 0;
+	}
+	.bank-port-img{
+		padding: 10px 0;
+	}
+	.bank-easy-img{
+		padding: 0;
+	}
+}
