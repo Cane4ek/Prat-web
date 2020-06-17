@@ -7,17 +7,24 @@
 	<title>Prat-web</title>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/57869e5c6f.js" crossorigin="anonymous"></script>
-	
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
+
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+
 	<link rel="stylesheet" href="js/vendor/slick/slick.css">
 	<link rel="stylesheet" href="js/vendor/slick/slick-theme.css">
+
+
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 		<header>
 			<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white container">
-				<a href="#" class="navbar-brand" title="ПрАТ ХАРКІВЕНЕРГОЗБУТ">
+				<a href="index.html" class="navbar-brand" title="ПрАТ ХАРКІВЕНЕРГОЗБУТ">
 					<img src="image/header/logo.png" alt="header-logo" class="navbar-brand-img">
 					ПрАТ "ХАРКІВЕНЕРГОЗБУТ"
 				</a>
@@ -60,10 +67,10 @@
 								<a href="#" class="nav-link" title="Оплата">Оплата</a>
 							</li>
 							<li class="nav-item dropdown">
-								<a href="#contacts" class="nav-link" id="navbarLandigs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Контакти">Контакти
+								<a href="#" class="nav-link" id="navbarLandigs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Контакти">Контакти
 								<i class="fas fa-angle-down"></i></a>
 								<div class="dropdown-menu dropdown-menu-cnt">
-								      	<a class="dropdown-item" href="contacts.html" title="Товариство">Товариство</a>
+							 			<a class="dropdown-item" href="contacts.html" title="Товариство">Товариство</a>
 								     	<a class="dropdown-item" href="info-center.html" title="Iнформаційно-консультаційний центр">Iнформаційно-консультаційний центр</a>
 								     	<a class="dropdown-item" href="call-center.html" title="Кол-центр">Кол-центр</a>
 								     	<a class="dropdown-item" href="feedback.html" title="Зворотній зв'язок">Зворотній зв'язок</a>
@@ -110,197 +117,96 @@
 				</nav>
 			</header>
 
-			<main role="main ">
-				<nav class="container">
-			 		<ol class="container breadcrumb ">
-					    <li class="breadcrumb-item"><a href="#" title="Головна">Головна</a></li>
-					    <li class="breadcrumb-item"><a href="#" title="Споживачам">Споживачам</a></li>
-					    <li class="breadcrumb-item active" aria-current="page">Оплата</li>
-					</ol>
-				</nav>
+			<main role="main" id="feedback">
+				<div class="container">
+					<nav aria-label="breadcrumb breadcrumb-contacts">
+  						<ol class="breadcrumb">
+    						<li class="breadcrumb-item"><a href="#">Головна</a></li>
+    						<li class="breadcrumb-item active" aria-current="page">Особистий прийом</li>
+ 						</ol>
+					</nav>
 
-				<div class="main-content-bank">
-					<div class="container bank-content">
-						<ul class="nav nav-tabs justify-content-center bank-content-title" id="myTab" role="tablist">
-							<li class="nav-item">
-								<a href="#" class="bank-content-title-left nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" title="ОПЛАТА ЧЕРЕЗ ІНТЕРНЕТ">ОПЛАТА ЧЕРЕЗ ІНТЕРНЕТ</a>
-							</li>
-							<li class="nav-item">
-								<a href="#" class="bank-content-title-right nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" title="ОПЛАТА У БАНКАХ-ПАРТНЕРАХ">ОПЛАТА У БАНКАХ-ПАРТНЕРАХ</a>
-							</li>
-
-						</ul>
-						<div class="bank-content-subtitle">
-							<p class="bank-content-description">Список платіжних систем, за допомогою яких побутові споживачі мають можливість розраховуватися за електричну енергію:</p>
-						</div>
-						
-						<div class="bank-slider">
-							<div class="sl-slider bank-pb-box-content">
-								<div class="bank-box">
-									<div class="bank-pb-img">
-										<a href="https://privatbank.ua/ru" title="Приватбанк">
-											<img src="image/main-pay/pb.png" alt="Приватбанк">
-										</a>
-									</div>
-									<div class="bank-funtion">
-										<div class="bank-pb-pay">
-											<a href="#">
-												<img src="image/main-pay/payment.png" alt="payment">
-											</a>
-											<a href="#" class="pb-link-pay" title="Оплатити">Оплатити</a>
-										</div>
-										<div class="bank-pb-instruction">
-											<a href="#">
-												<img src="image/main-pay/download.png" alt="download"></a>
-											<a href="#" class="pb-link-instuction" title="Інструкція">Інструкція</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="bank-pb-description">
-									<p class="bank-pb-text">Для споживачів, що мають платіжну карту Приватбанку оплата здійснюється без комісії Для споживачів, які не мають платіжну картку Приват банка оплата здійснюється з комісією, розмір якої залежить від суми платежу і виду платіжної картки.</p>
-								</div>
-							</div>
-
-							<div class="sl-slider bank-port-box-content">
-								<div class="bank-box">
-									<div class="bank-port-img">
-										<a href="https://privatbank.ua/ru" title="Portmone">
-											<img src="image/main-pay/port.png" alt="portmone">
-										</a>
-									</div>
-									<div class="bank-funtion">
-										<div class="bank-pb-pay">
-											<a href="#">
-												<img src="image/main-pay/payment.png" alt="Payment">
-											</a>
-											<a href="#" class="pb-link-pay" title="Оплатити">Оплатити</a>
-										</div>
-										<div class="bank-pb-instruction">
-											<a href="#">
-												<img src="image/main-pay/download.png" alt="download"></a>
-											<a href="#" class="pb-link-instuction" title="Інструкція">Інструкція</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="bank-pb-description">
-									<p class="bank-pb-text">Оплата за допомогою сервісу електронних платежів Portmone.com. З комісією.</p>
-								</div>
-							</div>
-
-
-							<div class="sl-slider bank-easy-box-content">
-								<div class="bank-box">
-									<div class="bank-easy-img">
-										<a href="https://privatbank.ua/ru" title="Easypay">
-											<img src="image/main-pay/easypay.png" alt="easypay">
-										</a>
-									</div>
-									<div class="bank-funtion">
-										<div class="bank-pb-pay">
-											<a href="#">
-												<img src="image/main-pay/payment.png" alt="payment">
-											</a>
-											<a href="#" class="pb-link-pay" title="Оплатити">Оплатити</a>
-										</div>
-										<div class="bank-pb-instruction">
-											<a href="#">
-												<img src="image/main-pay/download.png" alt="download"></a>
-											<a href="#" class="pb-link-instuction" title="Інструкція">Інструкція</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="bank-pb-description">
-									<p class="bank-pb-text">Оплата за допомогою сервісу електронних платежів EasyPay. З комісією.</p>
-								</div>
-							</div>
-
-
-							<div class="sl-slider bank-ipay-box-content">
-								<div class="bank-box">
-									<div class="bank-ipay-img">
-										<a href="https://privatbank.ua/ru" title="iPay">
-											<img src="image/main-pay/ipay.png" alt="ipay">
-										</a>
-									</div>
-									<div class="bank-funtion">
-										<div class="bank-pb-pay">
-											<a href="#">
-												<img src="image/main-pay/payment.png" alt="payment">
-											</a>
-											<a href="#" class="pb-link-pay" title="Оплатити">Оплатити</a>
-										</div>
-										<div class="bank-pb-instruction">
-											<a href="#">
-												<img src="image/main-pay/download.png" alt="download"></a>
-											<a href="#" class="pb-link-instuction" title="Інструкція">Інструкція</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="bank-pb-description">
-									<p class="bank-pb-text">Оплата за допомогою сервісу електронних платежів iPay. З комісією.</p>
-								</div>
-							</div>
-
-							<div class="sl-slider bank-ipay-box-content">
-								<div class="bank-box">
-									<div class="bank-ipay-img">
-										<a href="https://privatbank.ua/ru" >
-											<img src="image/main-pay/ipay.png" alt="ipay">
-										</a>
-									</div>
-									<div class="bank-funtion">
-										<div class="bank-pb-pay">
-											<a href="#">
-												<img src="image/main-pay/payment.png" alt="payment">
-											</a>
-											<a href="#" class="pb-link-pay">Оплатити</a>
-										</div>
-										<div class="bank-pb-instruction">
-											<a href="#">
-												<img src="image/main-pay/download.png" alt="download"></a>
-											<a href="#" class="pb-link-instuction">Інструкція</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="bank-pb-description">
-									<p class="bank-pb-text">Оплата за допомогою сервісу електронних платежів iPay. З комісією.</p>
-								</div>
-							</div>	
-
-							<div class="sl-slider bank-ipay-box-content">
-								<div class="bank-box">
-									<div class="bank-ipay-img">
-										<a href="https://privatbank.ua/ru" >
-											<img src="image/main-pay/ipay.png" alt="ipay">
-										</a>
-									</div>
-									<div class="bank-funtion">
-										<div class="bank-pb-pay">
-											<a href="#">
-												<img src="image/main-pay/payment.png" alt="payment">
-											</a>
-											<a href="#" class="pb-link-pay">Оплатити</a>
-										</div>
-										<div class="bank-pb-instruction">
-											<a href="#">
-												<img src="image/main-pay/download.png" alt="download"></a>
-											<a href="#" class="pb-link-instuction">Інструкція</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="bank-pb-description">
-									<p class="bank-pb-text">Оплата за допомогою сервісу електронних платежів iPay. З комісією.</p>
-								</div>
-							</div>									
-						</div>		
+					<div class="contacts-title">
+						<p class="contacts-title-cnt">Особистий прийом</p>
 					</div>
-				</div>
+
+					<div class="tabs-role-contacts d-flex contact-box">
+						<ul class="nav flex-column nav-contacts">
+							<li class="nav-item contacts-link">
+		  						<a class="nav-link" href="contacts.html" aria-controls="home" aria-selected="true">Товариство</a>
+		  					</li>
+		  					<li class="nav-item contacts-link">
+		  						<a class="nav-link " href="info-center.html" aria-controls="home" aria-selected="true">Iнформаційно-консультаційний центр</a>
+		  					</li>
+		  					<li class="nav-item contacts-link">
+		  						<a class="nav-link " href="call-center.html" aria-controls="home" aria-selected="true">Кол-центр</a>
+		  					</li>
+		  					<li class="nav-item contacts-link active">
+		  						<a class="nav-link " href="feedback.html" aria-controls="home" aria-selected="true">Зворотній зв'язок</a>
+		  					</li>
+						</ul>
+
+						<div class="feedback-content">
+
+								<div class="form-feedback">
+										<div class="row">
+											<div class="col form-group">			  	
+												<select id="select" name="select" class="form-control form-comment form-option arr">
+
+												    <option disabled hidden selected value="">Приймальна особа *</option>
+												    <option value="1">Value 1</option>
+												    <option value="2">Value 2</option>
+
+												</select>	
+											</div>
+											<div class="col form-group">
+												<input type="email" class="form-control form-comment form-box"  placeholder="Прізвище, ім'я, по-батькові *">
+											</div>
+											<div class="col form-group">
+												<input class="form-control form-comment form-box" type="text" placeholder="Прізвище, ім'я, по-батькові *">
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col form-group">
+												<input type="email" class="form-control form-comment form-box" aria-describedby="emailHelp" placeholder="Адреса *">							
+											</div>
+											<div class="col form-group">
+												<input type="email" class="form-control form-comment form-box" aria-describedby="emailHelp" placeholder="Контактний номер телефону *">
+											</div>
+											<div class="col form-group">
+												<input class="form-control form-comment form-box" type="email" placeholder="Ваш E-mail" aria-describedby="emailHelp">
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col col-lg-8 form-group form-textarea">
+	    										<textarea type="text" placeholder="Коментар" class="form-control form-comment box-cmt" cols="30" rows="7"></textarea>
+	 										</div>
+	 										<div class="col col-md-6 col-lg-4 form-group d-flex flex-column justify-content-between date-cnt-box">
+	 											<div class="form-date date-time-box">
+	 												<label for="datepicker">Час прийому *</label>
+            										<input id="datepicker" class="col col-lg-6 form-control form-control-date form-box form-box-sm">
+            									</div>
+            									<div class="form-date date-time-box">
+	 												<label for="datepicker">Напишіть відповідь *</label>
+	 												<label for="datepicker">5 + 0 =</label>
+            										<input type="text" class="col col-md-2 col-lg-2 form-control form-box form-box-sm">
+            									</div>
+            									<div class=" form-date form-date-btn">
+	 												<button type="button" class="btn form-btn-control">
+	 													<a href="feedback-second.html" class="form-date-btn-link" title="Далі">Зареєструвати звернення
+	 													</a>
+	 												</button>
+            									</div>
+
+	 										</div>
+
+	 									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 			</main>
 
 			<footer class="bg-navy">
@@ -516,7 +422,13 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script src="js/datepicker-uk.js"></script>
+
 	
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 	 -->
