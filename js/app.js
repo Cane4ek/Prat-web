@@ -176,6 +176,30 @@ return datepicker.regional.uk;
 
     });
 
+                 jQuery(function($) {
+      /*function for placeholder select*/
+      function selectPlaceholder(selectID){
+        var selected = $(selectID + ' option:selected');
+        var val = selected.val();
+        $(selectID + ' option' ).css('color', '#000');
+        selected.css('color', '#d5d5d5');
+        if (val == "") {
+          $(selectID).css('color', '#d5d5d5');
+        };
+        $(selectID).change(function(){
+          var val = $(selectID + ' option:selected' ).val();
+          if (val == "") {
+            $(selectID).css('color', '#d5d5d5');
+          }else{
+            $(selectID).css('color', '#000');
+          };
+        });
+      };
+
+      selectPlaceholder('#choose');
+
+    });
+
 /*let arrSelect = document.querySelectorAll('.form-item select');
 
 arrSelect.forEach(e => e.classList.add('has-placeholder'));

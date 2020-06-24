@@ -289,6 +289,77 @@ main{
 }
 
 
+/*---Offline pay---*/
+
+.requisites{
+	margin-top: 20px;
+}
+.requisites-title{
+	color: #273133;
+	font-size: 1.25em;
+	margin-bottom: 40px;
+}
+.offpay-first{
+	cursor: pointer;
+	filter: grayscale(100%);
+}
+.requisites-first,
+.requisites-second,
+.requisites-title{
+	text-align: center;
+}
+.requisites-first-content,
+.requisites-second-content{
+	color: #273133;
+	text-align: left;
+	margin-top: 25px;
+	line-height: 24px;
+}
+
+.bank-list{
+	margin: 20px auto 0;
+	max-width: 640px;
+	text-align: center;
+}
+.bank-list-title{
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 1.25em;
+	color: #273133;
+}
+
+.choose {
+	max-width: 40;
+	margin-right: 20px !important;
+}
+.choose-discription{
+	margin-bottom: 0;
+	padding-top: 5px;
+	text-align: left;
+	padding-left: 25px;
+	color: #273133;
+	font-size: 1.125em;
+}
+.offline-list-link{
+	padding: 0;
+	margin-top: 36px;
+	margin-bottom: 11px;
+}
+.offline-link-title{
+	color: #273133;
+	font-size: 1.125em;
+	padding-left: 10px;
+}
+.offline-link{
+	margin: 0 auto;
+	font-size: 1.125em;
+}
+.offline-content{
+	margin-bottom: 35px;
+	padding: 0;
+}
+
+
 
 /*----footer---->*/
 .bg-navy{
@@ -802,6 +873,9 @@ select{
 	.nav-contacts{
 		padding-right: 0;
 	}
+	.offline-box{
+	padding: 0;
+	}
 }
 @media screen and (max-width: 1200px){
 	.nav-contacts{
@@ -852,6 +926,10 @@ select{
 	   }
 	   .ft-column-sixth{
 	   	max-width: 155px;
+	   }
+	   .bank-list{
+	   	flex: 0 0 41.6666667%;
+	   	max-width: 41.6666667%;
 	   }
 }
 @media screen and (max-width: 990px) {
@@ -963,6 +1041,9 @@ select{
 	}
 	.form-box-theame{
 		margin-top: 20px;
+	}
+	.bank-list{
+		max-width: 640px;
 	}
 
 
