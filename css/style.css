@@ -836,8 +836,9 @@ select{
    	background-position: 95% 16px;
    	margin-right: 10px;
    	transition: 0s;
-   	font-size: 0.875em;
-
+}
+.arr-pay{
+	font-size: 0.875em;
 }
 .arr:focus{
 	background-position: 95% 15px;
